@@ -1,0 +1,117 @@
+/* --- 全体の基本設定 --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: "BIZ UDPGothic", "Hiragino Mincho ProN", serif; /* 和風な明朝体寄りに */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- メインビジュアル --- */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(40,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    overflow: hidden;
+}
+
+/* ロゴの浮遊アニメーション */
+.logo {
+    max-width: 80%;
+    height: auto;
+    z-index: 10;
+    filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.5));
+    animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* キャッチコピー */
+.catch-copy {
+    margin-top: -40px;
+    font-size: 1.8rem;
+    letter-spacing: 0.8rem;
+    color: #fff;
+    text-shadow: 0 0 10px #ff0000;
+    z-index: 10;
+    font-weight: bold;
+}
+
+/* --- ステータスエリア --- */
+.status-container {
+    margin-top: 40px;
+    text-align: center;
+    z-index: 10;
+}
+
+.dev-badge {
+    background: linear-gradient(90deg, #600, #b00, #600);
+    padding: 8px 30px;
+    font-size: 1.1rem;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* ダウンロードボタン（準備中） */
+.btn-disabled {
+    display: block;
+    width: 280px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #444;
+    color: #666;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    cursor: not-allowed;
+    transition: 0.3s;
+}
+
+.btn-disabled::after {
+    content: "COMING SOON";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    color: #999;
+    letter-spacing: 2px;
+}
+
+/* --- 背景の演出 --- */
+.bg-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('1000048144.png') no-repeat center;
+    background-size: cover;
+    opacity: 0.15;
+    filter: blur(8px);
+}
+
+/* --- フッター --- */
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #444;
+    background-color: #000;
+}
