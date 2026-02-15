@@ -2,117 +2,27 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>東方幻争 - Touhou Phantom War - 公式サイト</title>
-    <style>
-        /* 全体のスタイル設定 */
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000; /* 背景は黒でシックに */
-            color: #fff;
-            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
-            overflow-x: hidden;
-        }
-
-        /* メインビジュアル部分 */
-        .hero-section {
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), 
-                        url('1000048144.png') no-repeat center center; /* ロゴ画像を背景に */
-            background-size: contain;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .catch-copy {
-            font-size: 2rem;
-            letter-spacing: 0.5rem;
-            margin-top: 20px;
-            text-shadow: 0 0 15px #f00; /* 赤い光彩で幻想的に */
-            font-weight: bold;
-        }
-
-        /* ステータス・ボタンエリア */
-        .btn-container {
-            margin-top: 50px;
-        }
-
-        .status-badge {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff4d4d;
-            border-radius: 5px;
-            font-weight: bold;
-            animation: blink 2s infinite; /* 点滅させて「制作中」を強調 */
-        }
-
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
-
-        .download-btn {
-            display: block;
-            margin-top: 20px;
-            padding: 15px 40px;
-            background: #444;
-            color: #888;
-            text-decoration: none;
-            border: 2px solid #666;
-            cursor: not-allowed;
-            font-size: 1.2rem;
-        }
-
-        /* コンテンツセクション */
-        .content-section {
-            padding: 80px 20px;
-            text-align: center;
-            background: linear-gradient(to bottom, #000, #1a0000);
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            border-bottom: 2px solid #fff;
-            display: inline-block;
-            margin-bottom: 30px;
-        }
-
-        footer {
-            padding: 40px;
-            font-size: 0.8rem;
-            color: #666;
-            text-align: center;
-        }
-    </style>
+    <title>東方幻争 - Touhou Phantom War</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <section class="hero-section">
-        <div class="catch-copy">
-            幻想郷の運命を、その手に。
-        </div>
+    <section class="hero">
+        <div class="bg-effect"></div>
 
-        <div class="btn-container">
-            <div class="status-badge">NOW PREPARING: ゲーム制作中！</div>
-            <a href="#" class="download-btn">DOWNLOAD (準備中)</a>
-        </div>
-    </section>
+        <img src="1000048144.png" alt="東方幻争 ロゴ" class="logo">
+        
+        <p class="catch-copy">楽園の境界、争いの果てに。</p>
 
-    <section class="content-section">
-        <h2 class="section-title">ABOUT</h2>
-        <p>「東方幻争 - Touhou Phantom War」は、<br>
-        新たな異変に立ち向かう、東方Project二次創作ゲームです。</p>
-        <p>詳細は順次、公開予定！</p>
+        <div class="status-container">
+            <div class="dev-badge">ゲーム制作中！</div>
+            <a href="#" class="btn-disabled">　</a> </div>
     </section>
 
     <footer>
-        &copy; 2026 東方幻争 制作委員会 / 上海アリス幻樂団
+        &copy; 2026 東方幻争 / 上海アリス幻樂団（二次創作）
     </footer>
 
 </body>
 </html>
+
