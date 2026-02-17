@@ -115,3 +115,42 @@ footer {
     color: #444;
     background-color: #000;
 }
+
+/* α版専用のダウンロードボタン */
+.download-btn-alpha {
+    display: block;
+    width: 320px;
+    margin: 20px auto 10px;
+    padding: 18px;
+    background: linear-gradient(135deg, #800000 0%, #ff0000 100%); /* 鮮やかな赤 */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+    transition: 0.3s;
+    z-index: 20;
+    position: relative;
+}
+
+.download-btn-alpha:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+    background: linear-gradient(135deg, #a00000 0%, #ff3333 100%);
+}
+
+/* 注意書きのスタイル */
+.caution-text {
+    font-size: 0.9rem;
+    color: #ffcccc;
+    text-shadow: 1px 1px 5px #000;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* 準備中ボタンの余白調整 */
+.btn-disabled {
+    margin: 0 auto;
+}
